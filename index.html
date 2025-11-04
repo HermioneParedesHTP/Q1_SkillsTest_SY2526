@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Q1 Skills Test</title>
+</head>
+<body>
+    <h1>Robotics Club Application Form</h1>
+    <form action="/submit_application" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="experience">Describe your experience with robotics:</label><br>
+        <textarea id="experience" name="experience" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="skills">List any skills:</label><br>
+        <input type="text" id="skills" name="skills" required><br><br>
+
+        <label>Years of Experience in Robotics:</label><br>
+        <input type="radio" id="exp_less_1" name="years_experience" value="less_than_1">
+        <label for="exp_less_1">Less than 1 year</label><br>
+        <input type="radio" id="exp_1_2" name="years_experience" value="1_to_2">
+        <label for="exp_1_2">1-2 years</label><br>
+        <input type="radio" id="exp_2_3" name="years_experience" value="2_to_3">
+        <label for="exp_2_3">2-3 years</label><br>
+        <input type="radio" id="exp_3_plus" name="years_experience" value="more_than_3">
+        <label for="exp_3_plus">More than 3 years</label><br><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
